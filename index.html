@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count-Down</title>
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <div class="main">
+        <div class="overlay">
+            <h2 class="title">Count-Down</h2>
+            <div class="input-container">
+                <label for="end-date-input">Enter End Date:</label>
+                <input type="datetime-local" id="end-date-input" />
+                <button id="start-button">Start Count-Down</button>
+            </div>
+            <div class="col">
+                <div>
+                    <input type="text" readonly value="0">
+                    <br>
+                    <label for="">Days</label>
+                </div>
+                <div>
+                    <input type="text" readonly value="0">
+                    <br>
+                    <label for="">Hours</label>
+                </div>
+                <div>
+                    <input type="text" readonly value="0">
+                    <br>
+                    <label for="">Minutes</label>
+                </div>
+                <div>
+                    <input type="text" readonly value="0">
+                    <br>
+                    <label for="">Seconds</label>
+                </div>
+            </div>
+            <p id="completion-text"></p>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

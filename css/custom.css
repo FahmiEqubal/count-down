@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+/* Your existing CSS code */
+
+.main {
+    width: 100%;
+    min-height: 100vh; /* Change height to min-height */
+    background: url(../image/deo.jpeg) center center;
+    background-size: cover;
+    overflow: hidden; /* Prevent vertical scrollbar */
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;  from upper side*/ 
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.title{
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+.col{
+    margin-top: 10px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.col div{
+    width: 250px;
+    text-align: center;
+}
+input{
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: transparent;
+    border-radius: 8px;
+    height: 50px;
+    /* display: block; */
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Your existing CSS code */
+
+.input-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+input[type="datetime-local"] {
+    width: 60%;
+    padding: 8px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#completion-text {
+    text-align: center;
+    margin-top: 20px;
+}
+/* Your existing CSS code */
+
+/* Add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .col {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col div {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    #completion-text {
+        margin-top: 10px;
+    }
+
+    .overlay {
+        padding: 20px; /* Add padding to the overlay */
+    }
+}
